@@ -5,20 +5,20 @@
 class Dockerydo < Formula
   desc "a lightweight docker gui for terminal for quick access to docker commands (inspired by lazygit)"
   homepage "https://github.com/artyultra/dockerydo"
-  version "0.0.5"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.5/dockerydo_0.0.5_darwin_amd64.tar.gz"
-      sha256 "e80cc502f0ef5c7ae40ac6e076e5e20fbdc1a9f64d4640f96acbc28c89239d28"
+      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.1/dockerydo_0.0.1_darwin_amd64.tar.gz"
+      sha256 "072f99387784a5e9cffc90a23ef702527ab36093c2dbba2db85122e9b9e0b197"
 
       def install
         bin.install "dockerydo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.5/dockerydo_0.0.5_darwin_arm64.tar.gz"
-      sha256 "950dff966da8961726a88d284b306316adfaee87ad44bc3a708e2115e82c2078"
+      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.1/dockerydo_0.0.1_darwin_arm64.tar.gz"
+      sha256 "76b7c1f48c664e81a1ce412aeff132c4d278879048011c25ebd5ab10426933b0"
 
       def install
         bin.install "dockerydo"
@@ -28,15 +28,15 @@ class Dockerydo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.5/dockerydo_0.0.5_linux_amd64.tar.gz"
-      sha256 "4e1ca4c3b2a584a15d8a9ed32eb16366dc3dac09ecdcb5c166edded10f326a18"
+      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.1/dockerydo_0.0.1_linux_amd64.tar.gz"
+      sha256 "8504a31057f482a889827d868832689d9df3a1527b27cfe0a25af25cb826fd7a"
       def install
         bin.install "dockerydo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.5/dockerydo_0.0.5_linux_arm64.tar.gz"
-      sha256 "28af4f07ad021a06de056144cd3d86f05f18a05b663e006c83ee66fa3bc01aa3"
+      url "https://github.com/artyultra/dockerydo/releases/download/v0.0.1/dockerydo_0.0.1_linux_arm64.tar.gz"
+      sha256 "0cdacde39a092d008461293e94f2c0a53c0c32f4a95f4d800357a3068690a82a"
       def install
         bin.install "dockerydo"
       end
